@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/include_set_gender_0"
+    android:background="@drawable/bottomsheetdialog_bg"
+    android:padding="0x7f070284"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="0x7f0702b3"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_gender_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tv_male"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f070284"
+        android:text="@string/set_gender_male"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        style="@style/gender_select"/>
+    <TextView
+        android:id="@+id/tv_female"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f070280"
+        android:text="@string/set_gender_female"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_male"
+        app:layout_constraintRight_toRightOf="@+id/tv_male"
+        app:layout_constraintTop_toBottomOf="@+id/tv_male"
+        style="@style/gender_disselect"/>
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f070284"
+        android:text="@string/cancel"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_female"
+        app:layout_constraintRight_toRightOf="@+id/tv_female"
+        app:layout_constraintTop_toBottomOf="@+id/tv_female"
+        style="@style/Btn_Logout"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

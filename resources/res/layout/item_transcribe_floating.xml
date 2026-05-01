@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl"
+    android:tag="layout/item_transcribe_floating_0"
+    android:paddingTop="0x7f07027d"
+    android:paddingBottom="0x7f07027d"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="0x7f0702b4"
+        android:textColor="@color/txt_black"
+        android:gravity="center"
+        android:id="@+id/tv_content"
+        android:tag="binding_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:textSize="0x7f0702b3"
+        android:textColor="@color/txt_black"
+        android:gravity="center"
+        android:id="@+id/tv_translate_result"
+        android:tag="binding_2"
+        android:paddingTop="0x7f070289"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="翻译结果"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content"/>
+    <androidx.constraintlayout.widget.Group
+        android:tag="binding_3"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tv_translate_result"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

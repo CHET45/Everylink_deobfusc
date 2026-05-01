@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="32dp"
+    android:width="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+    <path
+        android:fillColor="@drawable/_ic_glass_image_recognition__0_res_0x7f080006"
+        android:pathData="M16,16m-16,0a16,16 0,1 1,32 0a16,16 0,1 1,-32 0"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M20.5,10H10.5C9.948,10 9.5,10.448 9.5,11V21C9.5,21.552 9.948,22 10.5,22H20.5C21.052,22 21.5,21.552 21.5,21V11C21.5,10.448 21.052,10 20.5,10Z"
+        android:strokeColor="#ffffff"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M13.5,15.667C14.42,15.667 15.166,14.921 15.166,14.001C15.166,13.08 14.42,12.334 13.5,12.334C12.579,12.334 11.833,13.08 11.833,14.001C11.833,14.921 12.579,15.667 13.5,15.667Z"
+        android:strokeColor="#ffffff"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M16.763,16.74C17.035,16.376 17.584,16.385 17.844,16.758L20.769,20.952C21.077,21.395 20.761,22 20.222,22H12.833L16.763,16.74Z"
+        android:strokeColor="#ffffff"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+</vector>

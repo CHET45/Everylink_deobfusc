@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:tag="layout/pwd_forget_view_layout_0"
+    android:background="@drawable/bg_dialog_bottom_dark"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="20dp">
+    <com.aivox.common_ui.DialogTitleView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:dtv_title="@string/account_pwd_forget_title"/>
+    <TextView
+        android:textSize="17sp"
+        android:textColor="@color/txt_color_primary"
+        android:id="@+id/tv_dialog_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/account_send_code_holder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dialog_title"/>
+    <com.aivox.common_ui.LoadingButton
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="0dp"
+        app:lb_text="@string/account_pwd_reset_msg"/>
+    <com.aivox.common_ui.LoadingButton
+        android:id="@+id/btn_try_again"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        app:lb_buttonType="stroke"
+        app:lb_text="@string/account_try_another"/>
+</LinearLayout>

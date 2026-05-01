@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_1"
+    android:tag="layout/logout_dialog_view_layout_0"
+    android:background="@color/home_bgcolor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent">
+    <TextView
+        android:textSize="0x7f0702b1"
+        android:textColor="@color/gray_6"
+        android:gravity="center"
+        android:id="@+id/tv_phone"
+        android:background="@drawable/ripple_bg_noborder"
+        android:padding="0x7f070282"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/set_exit_notic"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:textSize="0x7f0702b2"
+        android:textColor="@color/gray_3"
+        android:gravity="center"
+        android:id="@+id/tv_device"
+        android:background="@drawable/ripple_bg_noborder"
+        android:padding="0x7f070282"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/set_exit"
+        app:layout_constraintTop_toBottomOf="@+id/tv_phone"/>
+    <TextView
+        android:textSize="0x7f0702b1"
+        android:textStyle="bold"
+        android:textColor="@color/dialog_cancel"
+        android:gravity="center"
+        android:id="@+id/tv_cancel"
+        android:background="@drawable/ripple_bg_noborder"
+        android:padding="0x7f070282"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f07027d"
+        android:text="@string/cancel_"
+        app:layout_constraintTop_toBottomOf="@+id/tv_device"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

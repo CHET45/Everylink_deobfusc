@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="0x7f070284"
+    android:paddingTop="0x7f07027d"
+    android:paddingBottom="0x7f07027d"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="0x7f0702b1"
+        android:textColor="@color/gray_3"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/item_list_tatle"
+        android:padding="0x7f070289"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"/>
+</LinearLayout>

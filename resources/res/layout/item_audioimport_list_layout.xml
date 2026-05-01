@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl"
+    android:tag="layout/item_audioimport_list_layout_0"
+    android:background="@drawable/ripple_bg_noborder"
+    android:padding="0x7f070280"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:textSize="0x7f0702b1"
+            android:textColor="@color/gray_3"
+            android:id="@+id/item_name"
+            android:tag="binding_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="123456"
+            android:maxLines="2"
+            app:layout_constraintBottom_toTopOf="@+id/item_info_tv"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"/>
+        <TextView
+            android:textSize="0x7f0702af"
+            android:textColor="@color/gray_9"
+            android:id="@+id/item_info_tv"
+            android:tag="binding_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0x7f070289"
+            android:text="2019年10月07日  14:20:12"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/item_name"
+            app:layout_constraintTop_toBottomOf="@+id/item_name"/>
+        <TextView
+            android:textSize="0x7f0702af"
+            android:textColor="@color/gray_9"
+            android:id="@+id/item_info_duration"
+            android:tag="binding_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0x7f070280"
+            android:text="00:00:00"
+            app:layout_constraintBottom_toBottomOf="@+id/item_info_tv"
+            app:layout_constraintLeft_toRightOf="@+id/item_info_tv"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

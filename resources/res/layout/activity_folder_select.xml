@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/activity_folder_select_0"
+    android:background="@color/bg_color_secondary"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.aivox.common_ui.HeadTitleLinearView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:common_title_txt="@string/select_folder"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ListView
+        android:id="@+id/lv_folder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="@color/base_transparent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_save"
+        app:layout_constraintTop_toBottomOf="@+id/title_view"/>
+    <com.aivox.common_ui.LoadingButton
+        android:id="@+id/btn_save"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lb_enable="false"
+        app:lb_text="@string/save"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

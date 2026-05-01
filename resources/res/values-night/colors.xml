@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="base_gray_5">#f0f0f5</color>
+    <color name="base_gray_6">#fafafa</color>
+    <color name="base_purple_1">#5252a8</color>
+    <color name="base_purple_2">#8c8cfa</color>
+    <color name="base_purple_3">#ebebff</color>
+    <color name="base_purple_4">#eeeefe</color>
+    <color name="base_yellow_2">#cc7a00</color>
+    <color name="bg_btn_bright">@color/base_yellow_3</color>
+    <color name="bg_btn_disable">@color/base_gray_3</color>
+    <color name="bg_btn_highlight">@color/base_purple_2</color>
+    <color name="bg_btn_primary">@color/base_gray_6</color>
+    <color name="bg_btn_warning">@color/base_red_2</color>
+    <color name="bg_conversation_left">@color/base_gray_2</color>
+    <color name="bg_conversation_right">@color/base_purple_2</color>
+    <color name="bg_function_1">@color/base_purple_1</color>
+    <color name="bg_function_2">@color/base_yellow_2</color>
+    <color name="bg_function_3">@color/base_blue_1</color>
+    <color name="bg_function_4">@color/base_green_1</color>
+    <color name="bg_item_normal">@color/base_gray_2</color>
+    <color name="bg_item_select">@color/base_gray_3</color>
+    <color name="bg_trans_item_edit">@color/base_gray_2</color>
+    <color name="bg_trans_item_edit_stock">@color/base_gray_3</color>
+    <color name="bg_trans_item_normal">@color/base_gray_1</color>
+    <color name="bg_trans_item_select">@color/base_gray_3</color>
+    <color name="black">#000000</color>
+    <color name="edit_text_content_highlight">@color/base_purple_2</color>
+    <color name="edit_text_handle_highlight">@color/base_purple_2</color>
+    <color name="icon_mode_highlight">@color/base_purple_2</color>
+    <color name="icon_mode_normal">@color/base_gray_6</color>
+    <color name="line_divider_conversation_right">@color/base_purple_3</color>
+    <color name="white">#ffffff</color>
+</resources>

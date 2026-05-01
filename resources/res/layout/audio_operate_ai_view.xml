@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/ll_container"
+    android:tag="layout/audio_operate_ai_view_0"
+    android:background="@drawable/bg_dialog_bottom_dark"
+    android:paddingBottom="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="20dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_dialog_bar"
+        android:paddingVertical="8dp"/>
+    <TextView
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/txt_color_primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/smalink_ai"
+        android:paddingVertical="8dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bg_white_c14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="8dp">
+        <TextView
+            android:id="@+id/tv_ai_speaker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/record_pop_speaker"
+            app:drawableStartCompat="@drawable/ic_record_dialog_speaker"
+            style="@style/RecordInfoTextStyle"/>
+        <View
+            android:id="@+id/line_speaker"
+            style="@style/DialogTileLine"/>
+        <TextView
+            android:id="@+id/tv_transcribe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/file_retry_transcribe"
+            app:drawableStartCompat="@drawable/ic_record_dialog_transcribe"
+            style="@style/RecordInfoTextStyle"/>
+        <View style="@style/DialogTileLine"/>
+        <TextView
+            android:id="@+id/tv_translate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/file_translate_all"
+            app:drawableStartCompat="@drawable/ic_record_dialog_translate"
+            style="@style/RecordInfoTextStyle"/>
+    </LinearLayout>
+</LinearLayout>

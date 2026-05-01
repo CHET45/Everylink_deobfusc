@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="11"
+    android:versionName="1.1.0"
+    android:compileSdkVersion="35"
+    android:compileSdkVersionCodename="15"
+    android:requiredSplitTypes="base__abi,base__density"
+    android:splitTypes=""
+    package="com.aivox.everylink"
+    platformBuildVersionCode="35"
+    platformBuildVersionName="15">
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="35"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_SCAN"
+        android:usesPermissionFlags="neverForLocation"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true"/>
+    <queries package="com.aivox.everylink">
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.ACTION_VIDEO_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <application
+        android:theme="@style/AppBaseTheme"
+        android:label="@string/app_name"
+        android:icon="@mipmap/icon_logo"
+        android:name="com.aivox.app.MyApplication"
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:resizeableActivity="false"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/icon_logo_round"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true">
+        <activity
+            android:name="com.aivox.app.activity.GlassManualActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode|orientation"/>
+        <activity
+            android:name="com.aivox.app.activity.GlassPreviewActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="screenSize|uiMode|screenLayout|keyboardHidden"/>
+        <activity
+            android:name="com.aivox.app.activity.DeviceFilesActivity"
+            android:exported="false"
+            android:configChanges="uiMode|orientation"/>
+        <activity
+            android:name="com.aivox.app.activity.AiChatEditActivity"
+            android:exported="false"
+            android:configChanges="uiMode|orientation"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.aivox.app.activity.DeviceInfoActivity"
+            android:exported="false"
+            android:configChanges="uiMode|orientation"/>
+        <activity
+            android:name="com.aivox.app.activity.SearchAndMoveActivity"
+            android:exported="false"
+            android:configChanges="uiMode|orientation"/>
+        <activity
+            android:name="com.aivox.app.activity.ConversationHistoryActivity"
+            android:exported="false"
+            android:configChanges="uiMode|orientation"/>
+        <activity
+            android:name="com.aivox.app.activity.EarPhoneConversationRecordingActivity"
+            android:exported="false"
+            android:configChanges="uiMode|orientation"/>
+        <activity
+            android:name="com.aivox.app.activity.DeviceHelpActivity"
+            android:exported="false"
+            android:configChanges="uiMode|orientation"/>
+        <activity
+            android:name="com.aivox.app.activity.FunctionGuideActivity"
+            android:exported="false"
+            android:configChanges="uiMode|orientation"/>
+        <activity
+            android:name="com.aivox.app.activity.NoteMarkListActivity"
+            android:exported="false"
+            android:configChanges="uiMode|orientation"/>
+        <activity
+            android:name="com.aivox.app.activity.NoticeDetailActivity"
+            android:exported="false"
+            android:configChanges="uiMode|orientation"/>
+        <activity
+            android:name="com.aivox.app.activity.NoticeListActivity"
+            android:exported="false"
+            android:configChanges="uiMode|orientation"/>
+        <activity
+            android:name="com.aivox.app.activity.RecordUploadActivity"
+            android:exported="false"
+            android:configChanges="uiMode|orientation"/>
+        <activity
+            android:name="com.aivox.app.activity.SplashActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|uiMode|orientation|navigation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.aivox.app.activity.ExternalOpenActivity"
+            android:exported="false"
+            android:configChanges="uiMode|orientation"/>
+        <activity
+            android:name="com.aivox.app.activity.MyPhotoBrowseActivity"
+            android:exported="false"
+            android:configChanges="screenSize|uiMode|orientation|navigation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.aivox.app.activity.MainActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="uiMode|orientation"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity
+            android:name="com.aivox.app.activity.FolderSelectActivity"
+            android:exported="false"
+            android:configChanges="uiMode|orientation"/>
+        <activity
+            android:name="com.aivox.app.activity.DeviceScanActivity"
+            android:launchMode="singleTask"
+            android:configChanges="screenSize|uiMode|orientation|navigation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.aivox.app.activity.DeviceConnectedActivity"
+            android:launchMode="singleTask"
+            android:configChanges="screenSize|uiMode|orientation|navigation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.aivox.app.activity.DeviceUpdateActivity"
+            android:launchMode="singleTask"
+            android:configChanges="screenSize|uiMode|orientation|navigation|keyboardHidden|keyboard"
+            android:keepScreenOn="true"/>
+        <activity
+            android:name="com.aivox.app.activity.RecordImportActivity"
+            android:launchMode="singleTask"
+            android:configChanges="screenSize|uiMode|orientation|navigation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.aivox.app.activity.RecordInfoActivity"
+            android:launchMode="singleTask"
+            android:configChanges="screenSize|uiMode|orientation|navigation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity
+            android:name="com.aivox.app.activity.RecordingActivity"
+            android:launchMode="singleTask"
+            android:configChanges="screenSize|uiMode|orientation|navigation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.aivox.app.activity.ConversationRecordingActivity"
+            android:launchMode="singleTask"
+            android:configChanges="screenSize|uiMode|orientation|navigation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.aivox.app.activity.WebActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|uiMode|orientation|navigation|keyboardHidden|keyboard"/>
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true"/>
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape"/>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.aivox.everylink.fileprovider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+        <activity
+            android:name="com.aivox.account.activity.SmsCodeActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.aivox.account.activity.PhoneInputActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.aivox.account.activity.NameInputActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.aivox.account.activity.PwdInputActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.aivox.account.activity.CodeInputActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.aivox.account.activity.EmailInputActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.aivox.account.activity.OneKeyLoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|navigation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.aivox.account.activity.UserInfoActivity"
+            android:configChanges="screenSize|orientation|navigation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.aivox.set.activity.ContactUsActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.aivox.set.activity.TutorialsActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.aivox.set.activity.TimeDetailActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.aivox.set.activity.PurchaseHistoryActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.aivox.set.activity.MembershipActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.aivox.set.activity.FontSizeActivity"
+            android:configChanges="screenSize|orientation|navigation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.aivox.set.activity.AboutUsActivity"
+            android:configChanges="screenSize|orientation|navigation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.aivox.set.activity.StorageSpaceActivity"
+            android:configChanges="screenSize|orientation|navigation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.aivox.set.activity.VipJoinActivity"
+            android:configChanges="screenSize|orientation|navigation|keyboardHidden|keyboard"/>
+        <service
+            android:name="com.aivox.common.ble.service.SppBtService"
+            android:enabled="true"
+            android:foregroundServiceType="connectedDevice"/>
+        <service
+            android:name="com.aivox.common.ble.service.BleBtService"
+            android:enabled="true"
+            android:foregroundServiceType="connectedDevice"/>
+        <service
+            android:name="com.aivox.common.socket.WebSocketService"
+            android:exported="true"
+            android:foregroundServiceType="microphone|dataSync"/>
+        <service
+            android:name="com.aivox.common.util.whisper.WhisperService"
+            android:exported="false"
+            android:foregroundServiceType="microphone"/>
+        <receiver
+            android:name="com.aivox.common.util.LocaleChangeReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.lxj.xpopup.util.XPermission.PermissionActivity"/>
+        <activity
+            android:theme="@style/ActivityTranslucent"
+            android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:theme="@style/ActivityTranslucent"
+            android:name="com.blankj.utilcode.util.UtilsTransActivity"
+            android:multiprocess="true"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider
+            android:name="com.blankj.utilcode.util.UtilsFileProvider"
+            android:exported="false"
+            android:authorities="com.aivox.everylink.utilcode.fileprovider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/util_code_provider_paths"/>
+        </provider>
+        <service
+            android:name="com.blankj.utilcode.util.MessengerUtils.ServerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.aivox.everylink.messenger"/>
+            </intent-filter>
+        </service>
+        <provider
+            android:name="com.luck.picture.lib.basic.PictureFileProvider"
+            android:exported="false"
+            android:authorities="com.aivox.everylink.luckProvider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/ps_file_paths"/>
+        </provider>
+        <service
+            android:name="com.luck.picture.lib.service.ForegroundService"
+            android:enabled="true"
+            android:foregroundServiceType="location"/>
+        <activity
+            android:theme="@style/Base.Theme.NoActionBar"
+            android:name="com.luck.picture.lib.basic.PictureSelectorSupporterActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/Picture.Theme.Translucent"
+            android:name="com.luck.picture.lib.basic.PictureSelectorTransparentActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name="com.yalantis.ucrop.UCropMultipleActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"/>
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true"
+            android:visibleToInstantApps="true"/>
+        <meta-data
+            android:name="com.bumptech.glide.integration.webp.WebpGlideModule"
+            android:value="GlideModule"/>
+        <meta-data
+            android:name="com.google.android.play.billingclient.version"
+            android:value="8.0.0"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.android.billingclient.api.ProxyBillingActivity"
+            android:exported="false"
+            android:configChanges="screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.android.billingclient.api.ProxyBillingActivityV2"
+            android:exported="false"
+            android:configChanges="screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.aivox.everylink.androidx-startup">
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup"/>
+        </provider>
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct"/>
+        </service>
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false"/>
+        <provider
+            android:name="com.microsoft.cognitiveservices.speech.util.InternalContentProvider"
+            android:exported="false"
+            android:authorities="com.aivox.everylink.MicrosoftCognitiveServicesSpeech.InternalContentProvider"/>
+        <activity
+            android:name="com.pairip.licensecheck.LicenseActivity"
+            android:exported="false"/>
+        <provider
+            android:name="com.pairip.licensecheck.LicenseContentProvider"
+            android:exported="false"
+            android:authorities="com.aivox.everylink.com.pairip.licensecheck.LicenseContentProvider"/>
+        <meta-data
+            android:name="com.android.vending.splits.required"
+            android:value="true"/>
+        <meta-data
+            android:name="com.android.stamp.source"
+            android:value="https://play.google.com/store"/>
+        <meta-data
+            android:name="com.android.stamp.type"
+            android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:resource="@xml/splits0"/>
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="3"/>
+    </application>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+</manifest>

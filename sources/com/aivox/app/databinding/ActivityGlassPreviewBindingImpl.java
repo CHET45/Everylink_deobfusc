@@ -1,0 +1,70 @@
+package com.aivox.app.databinding;
+
+import android.util.SparseIntArray;
+import android.view.SurfaceView;
+import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.databinding.DataBindingComponent;
+import androidx.databinding.ViewDataBinding;
+import com.aivox.app.C0726R;
+
+/* JADX INFO: loaded from: classes.dex */
+public class ActivityGlassPreviewBindingImpl extends ActivityGlassPreviewBinding {
+    private static final ViewDataBinding.IncludedLayouts sIncludes = null;
+    private static final SparseIntArray sViewsWithIds;
+    private long mDirtyFlags;
+
+    @Override // androidx.databinding.ViewDataBinding
+    protected boolean onFieldChange(int i, Object obj, int i2) {
+        return false;
+    }
+
+    @Override // androidx.databinding.ViewDataBinding
+    public boolean setVariable(int i, Object obj) {
+        return true;
+    }
+
+    static {
+        SparseIntArray sparseIntArray = new SparseIntArray();
+        sViewsWithIds = sparseIntArray;
+        sparseIntArray.put(C0726R.id.f114fl, 1);
+        sparseIntArray.put(C0726R.id.f117sv, 2);
+        sparseIntArray.put(C0726R.id.iv_back, 3);
+    }
+
+    public ActivityGlassPreviewBindingImpl(DataBindingComponent dataBindingComponent, View view2) {
+        this(dataBindingComponent, view2, mapBindings(dataBindingComponent, view2, 4, sIncludes, sViewsWithIds));
+    }
+
+    private ActivityGlassPreviewBindingImpl(DataBindingComponent dataBindingComponent, View view2, Object[] objArr) {
+        super(dataBindingComponent, view2, 0, (ConstraintLayout) objArr[0], (FrameLayout) objArr[1], (ImageView) objArr[3], (SurfaceView) objArr[2]);
+        this.mDirtyFlags = -1L;
+        this.clParent.setTag(null);
+        setRootTag(view2);
+        invalidateAll();
+    }
+
+    @Override // androidx.databinding.ViewDataBinding
+    public void invalidateAll() {
+        synchronized (this) {
+            this.mDirtyFlags = 1L;
+        }
+        requestRebind();
+    }
+
+    @Override // androidx.databinding.ViewDataBinding
+    public boolean hasPendingBindings() {
+        synchronized (this) {
+            return this.mDirtyFlags != 0;
+        }
+    }
+
+    @Override // androidx.databinding.ViewDataBinding
+    protected void executeBindings() {
+        synchronized (this) {
+            this.mDirtyFlags = 0L;
+        }
+    }
+}

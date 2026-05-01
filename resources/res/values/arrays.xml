@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="email_cn">
+        <item>@qq.com</item>
+        <item>@163.com</item>
+        <item>@gmail.com</item>
+        <item>@yahoo.com.hk</item>
+        <item>@hotmail.com</item>
+        <item>@outlook.com</item>
+        <item>@icloud.com</item>
+    </array>
+    <array name="markArray5">
+        <item>00:00:00</item>
+        <item>00:00:50</item>
+    </array>
+    <array name="phone">
+        <item>+86 中国大陆</item>
+        <item>+1 美国</item>
+        <item>+81 日本</item>
+        <item>+852 中国香港</item>
+        <item>+886 中国台湾</item>
+        <item>+853 中国澳门</item>
+    </array>
+    <array name="template_tv">
+        <item>Bluetooth</item>
+        <item>WIFI</item>
+    </array>
+    <array name="wakeup_cmd_en">
+        <item>hey smart</item>
+        <item />
+        <item>answer call</item>
+        <item>hang up call</item>
+    </array>
+    <array name="wakeup_cmd_zh">
+        <item>小d小d</item>
+        <item>小多小多</item>
+        <item>接听电话</item>
+        <item>挂断电话</item>
+    </array>
+    <array name="wakeup_cmd_zh_t">
+        <item>小d小d</item>
+        <item>小多小多</item>
+        <item>接聽電話</item>
+        <item>掛斷電話</item>
+    </array>
+    <array name="week_day">
+        <item>@string/week_day_monday</item>
+        <item>@string/week_day_tuesday</item>
+        <item>@string/week_day_wednesday</item>
+        <item>@string/week_day_thursday</item>
+        <item>@string/week_day_friday</item>
+        <item>@string/week_day_saturday</item>
+        <item>@string/week_day_sunday</item>
+    </array>
+</resources>

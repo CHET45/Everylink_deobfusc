@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/activity_email_input_0"
+    android:background="@color/bg_color_primary"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.aivox.common_ui.HeadTitleLinearView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:common_title_txt="@string/login_2sendcode_accounttype_email"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.aivox.common_ui.LoginEditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginHorizontal="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:let_hint="@string/login_loginbypwd_hint_account_email"
+        app:let_inputType="email"
+        app:let_showKeyboard="true"/>
+    <com.aivox.common_ui.LoadingButton
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginHorizontal="36dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_email"
+        app:lb_enable="false"
+        app:lb_text="@string/do_continue"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

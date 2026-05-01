@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/vip_feature_view_layout_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="40dp">
+        <TextView
+            android:id="@+id/tv_feature_1"
+            android:text="@string/vip_feature_time"
+            app:drawableStartCompat="@drawable/ic_vip_feature_time"
+            style="@style/VipFeatureTextViewStyle"/>
+        <TextView
+            android:id="@+id/tv_feature_2"
+            android:text="@string/vip_feature_ai"
+            app:drawableStartCompat="@drawable/ic_vip_feature_ai"
+            style="@style/VipFeatureTextViewStyle"/>
+        <TextView
+            android:id="@+id/tv_feature_3"
+            android:text="@string/vip_feature_cloud"
+            app:drawableStartCompat="@drawable/ic_vip_feature_cloud"
+            style="@style/VipFeatureTextViewStyle"/>
+        <TextView
+            android:id="@+id/tv_feature_4"
+            android:text="@string/vip_feature_img"
+            app:drawableStartCompat="@drawable/ic_vip_feature_pic"
+            style="@style/VipFeatureTextViewStyle"/>
+        <TextView
+            android:id="@+id/tv_feature_5"
+            android:text="@string/vip_feature_folder"
+            app:drawableStartCompat="@drawable/ic_vip_feature_folder"
+            style="@style/VipFeatureTextViewStyle"/>
+        <TextView
+            android:id="@+id/tv_feature_6"
+            android:text="@string/vip_feature_import"
+            app:drawableStartCompat="@drawable/ic_vip_feature_import"
+            style="@style/VipFeatureTextViewStyle"/>
+    </LinearLayout>
+</ScrollView>

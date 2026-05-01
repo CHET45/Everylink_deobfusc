@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/activity_membership_0"
+    android:background="@color/bg_color_secondary"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.aivox.common_ui.HeadTitleLinearView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:common_title_txt="@string/set_membership"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/title_view">
+        <com.aivox.common_ui.SettingTileView
+            android:id="@+id/stv_history"
+            android:tag="binding_1"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tile_title="@string/set_purchase_history"/>
+        <com.aivox.common_ui.SettingTileView
+            android:id="@+id/stv_upgrade"
+            android:tag="binding_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tile_title="@string/set_member_upgrade"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

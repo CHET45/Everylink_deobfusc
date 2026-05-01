@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:tag="layout/activity_time_detail_0"
+    android:background="@color/bg_color_secondary"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.aivox.common_ui.HeadTitleLinearView
+        android:id="@+id/head_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:common_title_txt="@string/title_dashboard"/>
+    <TextView
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/txt_color_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_page_remaining_time"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="16dp"/>
+    <com.aivox.common_ui.RemainTimeView
+        android:id="@+id/rtv_time"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"/>
+    <TextView
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/txt_color_primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/set_storage_detail"
+        android:layout_marginStart="20dp"
+        android:paddingVertical="8dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_time"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingHorizontal="20dp"/>
+</LinearLayout>

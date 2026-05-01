@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:tag="layout/activity_record_upload_0"
+    android:background="@color/bg_color_secondary"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.aivox.common_ui.HeadTitleLinearView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:common_title_txt="Import Audio File"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="20dp">
+        <TextView
+            android:textSize="17sp"
+            android:textColor="@color/txt_color_primary"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_file_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            app:drawableStartCompat="@drawable/ic_record_file"/>
+        <ProgressBar
+            android:id="@+id/pb_progress"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_update"
+            android:layout_marginVertical="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/iv_ic"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+        <TextView
+            android:textSize="17sp"
+            android:textColor="@color/txt_color_primary"
+            android:id="@+id/tv_progress"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/record_loading"
+            android:drawablePadding="16dp"
+            android:layout_weight="1"/>
+        <com.aivox.common_ui.LoadingButton
+            android:id="@+id/btn_finish"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="24dp"
+            app:lb_enable="false"
+            app:lb_text="@string/update_finish"/>
+    </LinearLayout>
+</LinearLayout>

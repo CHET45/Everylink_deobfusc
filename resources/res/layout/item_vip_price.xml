@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="0x7f0702b1"
+    android:textColor="@color/white"
+    android:gravity="center"
+    android:id="@+id/tv_common_1"
+    android:tag="layout/item_vip_price_0"
+    android:background="@drawable/vip_select"
+    android:padding="0x7f07027d"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="￥19.8/月"/>

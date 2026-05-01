@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:tag="layout/activity_phone_input_0"
+    android:background="@color/bg_color_primary"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.aivox.common_ui.HeadTitleLinearView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:common_title_txt="@string/login_2sendcode_accounttype_phone"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.aivox.common_ui.LoginEditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginHorizontal="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_view"
+        app:let_hint="@string/login_loginbypwd_hint_account_phone"
+        app:let_inputType="number"
+        app:let_showKeyboard="true"/>
+    <com.aivox.common_ui.LoadingButton
+        android:id="@+id/btn_send_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginHorizontal="36dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_phone"
+        app:lb_enable="false"
+        app:lb_text="@string/send_code"/>
+    <TextView
+        android:id="@+id/tv_pwd_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/login_loginbypwd_accounttype_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_send_code"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

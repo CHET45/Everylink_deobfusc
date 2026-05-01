@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="#e4e7e9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:textColor="#59676e"
+        android:id="@+id/et_answer"
+        android:background="@null"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"/>
+    <Button
+        android:textColor="#fff"
+        android:id="@+id/btn_fill_blank"
+        android:background="#4db6ac"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:text="确定"/>
+</LinearLayout>

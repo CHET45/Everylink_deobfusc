@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:tag="layout/loading_button_layout_0"
+    android:background="@drawable/bg_btn_highlight_c80"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+    <TextView
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/txt_color_tertiary"
+        android:gravity="center"
+        android:id="@+id/tv_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/sure"/>
+    <ImageView
+        android:id="@+id/iv_loading"
+        android:visibility="invisible"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_btn_loading"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

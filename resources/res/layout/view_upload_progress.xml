@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_bg_white"
+    android:padding="0x7f070284"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.aivox.common_ui.CircularProgressView
+        android:id="@+id/progress_circular"
+        android:layout_width="0x7f07027f"
+        android:layout_height="0x7f07027f"
+        app:backColor="@color/gray10"
+        app:backWidth="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:progColor="@color/colorAccent"
+        app:progWidth="3dp"
+        app:progress="0"/>
+    <TextView
+        android:textSize="0x7f0702b5"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tv_"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+    <TextView
+        android:textSize="0x7f0702b5"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/tv_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

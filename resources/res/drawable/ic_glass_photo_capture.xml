@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="32dp"
+    android:width="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+    <path
+        android:fillColor="@drawable/_ic_glass_photo_capture__0_res_0x7f080007"
+        android:pathData="M16,16m-16,0a16,16 0,1 1,32 0a16,16 0,1 1,-32 0"/>
+    <group>
+        <clip-path android:pathData="M8,8h16v16h-16z"/>
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M13,12L14,10H18L19,12H13Z"
+            android:strokeColor="#ffffff"
+            android:strokeWidth="1.2"
+            android:strokeLineJoin="round"/>
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M21.666,12H10.333C9.781,12 9.333,12.448 9.333,13V21C9.333,21.552 9.781,22 10.333,22H21.666C22.219,22 22.666,21.552 22.666,21V13C22.666,12.448 22.219,12 21.666,12Z"
+            android:strokeColor="#ffffff"
+            android:strokeWidth="1.2"
+            android:strokeLineJoin="round"/>
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M16,19.667C17.472,19.667 18.666,18.473 18.666,17.001C18.666,15.528 17.472,14.334 16,14.334C14.527,14.334 13.333,15.528 13.333,17.001C13.333,18.473 14.527,19.667 16,19.667Z"
+            android:strokeColor="#ffffff"
+            android:strokeWidth="1.2"
+            android:strokeLineJoin="round"/>
+    </group>
+</vector>

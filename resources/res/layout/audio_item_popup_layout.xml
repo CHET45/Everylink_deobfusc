@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg_color_secondary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="12dp">
+        <TextView
+            android:textSize="10sp"
+            android:textColor="@color/txt_color_primary"
+            android:gravity="center_horizontal"
+            android:id="@+id/tv_rename"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:text="@string/label_item_edit"
+            android:drawablePadding="8dp"
+            android:layout_marginStart="4dp"
+            app:drawableTopCompat="@drawable/ic_popup_edit"/>
+        <TextView
+            android:textSize="10sp"
+            android:textColor="@color/txt_color_primary"
+            android:gravity="center_horizontal"
+            android:id="@+id/tv_delete"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:drawablePadding="8dp"
+            android:layout_marginStart="4dp"
+            app:drawableTopCompat="@drawable/ic_popup_delete"/>
+    </LinearLayout>
+</LinearLayout>
